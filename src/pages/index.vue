@@ -45,6 +45,7 @@
 				</button>
 			</div>
 		</div>
+		<iframe src="http://164.92.176.94/" width="600" height="400" class="ring-4 ring-black rounded-lg"></iframe>
 		<router-link
 			:to="{ name: 'other-page' }"
 			class="
