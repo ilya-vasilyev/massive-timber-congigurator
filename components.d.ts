@@ -8,6 +8,8 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
+    ComponentOverlay: typeof import('./src/components/ComponentOverlay.vue')['default']
+    FilterStep: typeof import('./src/components/FilterStep.vue')['default']
     'Icon:bx:bxMoon': typeof import('~icons/ic/on-bx-bx-moon')['default']
     'Icon:bx:bxsMoon': typeof import('~icons/ic/on-bx-bxs-moon')['default']
     'IconAkarIcons:githubFill': typeof import('~icons/ic/on-akar-icons-github-fill')['default']
@@ -17,6 +19,7 @@ declare module '@vue/runtime-core' {
     MdiChevronLeft: typeof import('~icons/mdi/chevron-left')['default']
     MdiChevronRight: typeof import('~icons/mdi/chevron-right')['default']
     MdiChevrotRight: typeof import('~icons/mdi/chevrot-right')['default']
+    MdiHouse: typeof import('~icons/mdi/house')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
