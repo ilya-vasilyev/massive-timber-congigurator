@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
-import VitailseLogo from '@/assets/logo.png';
 useHead({
   title: 'Masstimber configurator',
 });

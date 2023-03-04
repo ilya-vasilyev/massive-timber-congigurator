@@ -8,7 +8,9 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
+    CompareOverlay: typeof import('./src/components/CompareOverlay.vue')['default']
     ComponentOverlay: typeof import('./src/components/ComponentOverlay.vue')['default']
+    copy: typeof import('./src/components/ComponentOverlay copy.vue')['default']
     FilterStep: typeof import('./src/components/FilterStep.vue')['default']
     'Icon:bx:bxMoon': typeof import('~icons/ic/on-bx-bx-moon')['default']
     'Icon:bx:bxsMoon': typeof import('~icons/ic/on-bx-bxs-moon')['default']
