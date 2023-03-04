@@ -46,7 +46,7 @@ const store = useStore();
 
 			<div class="col-span-2">
 
-				<div class="stats stats-vertical lg:stats-horizontal shadow-lg border-2 border-base-300 my-8">
+				<div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-8">
 					<div class="stat">
 						<div class="stat-title">Downloads</div>
 						<div class="stat-value">31K</div>
@@ -85,8 +85,8 @@ const store = useStore();
 				<mdi-chevron-left class="w-6 h-6 -ml-2 mr-2" />
 				Back
 			</router-link>
-			<router-link :to="{ name: 'plan' }" class="btn btn-primary btn-wide" disabled>
-				Next
+			<router-link :to="{ name: 'results' }" class="btn btn-primary btn-wide">
+				Results
 				<mdi-chevron-right class="w-6 h-6 ml-2 -mr-2" />
 			</router-link>
 		</nav>
