@@ -2,7 +2,8 @@
 import { useStore } from '@/store';
 
 const props = defineProps<{
-  isOpened: boolean
+  isOpened: boolean,
+  selected: number,
 }>()
 const store = useStore();
 
@@ -14,6 +15,7 @@ const store = useStore();
       <div class="absolute inset-0 bg-base-content opacity-50 cursor-pointer" @click="store.$state.overlayOpen = false" />
       <div class="relative my-16 mx-auto max-w-4xl bg-base-100">
 
+        <b>{{ selected }}</b>
         <div class="grid grid-cols-2 auto-rows-auto p-8">
           <div class="w-full aspect-[16/9] bg-secondary rounded-lg" />
 
