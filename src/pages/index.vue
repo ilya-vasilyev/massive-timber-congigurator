@@ -33,19 +33,14 @@
 				<button
 					@click="store.$state.count++"
 					class="
-						px-4
-						py-2
-						dark:bg-blue-800
-						bg-blue-500
-						text-white
-						rounded
+						btn btn-primary mb-4
 					"
 				>
 					Count : {{ store.$state.count }}
 				</button>
 			</div>
 		</div>
-		<iframe src="http://164.92.176.94/" width="600" height="400" class="ring-4 ring-black rounded-lg"></iframe>
+		<iframe src="https://hackathon.arendus.pro/" width="600" height="400" class="ring-4 ring-black rounded-lg"></iframe>
 		<router-link
 			:to="{ name: 'other-page' }"
 			class="
