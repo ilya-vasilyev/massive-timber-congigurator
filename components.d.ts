@@ -8,9 +8,15 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
-    'Icon:bx:bxMoon': typeof import('~icons/bx/bx-moon')['default']
-    'Icon:bx:bxsMoon': typeof import('~icons/bx/bxs-moon')['default']
-    'IconAkarIcons:githubFill': typeof import('~icons/akar-icons/github-fill')['default']
+    'Icon:bx:bxMoon': typeof import('~icons/ic/on-bx-bx-moon')['default']
+    'Icon:bx:bxsMoon': typeof import('~icons/ic/on-bx-bxs-moon')['default']
+    'IconAkarIcons:githubFill': typeof import('~icons/ic/on-akar-icons-github-fill')['default']
+    MdiAccount: typeof import('~icons/mdi/account')['default']
+    'MdiAccount-': typeof import('~icons/mdi/account-')['default']
+    MdiAccountBox: typeof import('~icons/mdi/account-box')['default']
+    MdiChevronLeft: typeof import('~icons/mdi/chevron-left')['default']
+    MdiChevronRight: typeof import('~icons/mdi/chevron-right')['default']
+    MdiChevrotRight: typeof import('~icons/mdi/chevrot-right')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

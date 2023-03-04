@@ -31,7 +31,9 @@ declare module '@vue-router/routes' {
   export interface RouteNamedMap {
     'home': RouteRecordInfo<'home', '/', Record<never, never>, Record<never, never>>,
     'not-found': RouteRecordInfo<'not-found', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
-    'other-page': RouteRecordInfo<'other-page', '/other-page', Record<never, never>, Record<never, never>>,
+    'filter01': RouteRecordInfo<'filter01', '/filter01', Record<never, never>, Record<never, never>>,
+    'filter02': RouteRecordInfo<'filter02', '/filter02', Record<never, never>, Record<never, never>>,
+    'plan': RouteRecordInfo<'plan', '/plan', Record<never, never>, Record<never, never>>,
   }
 }
 

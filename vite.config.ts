@@ -23,7 +23,8 @@ export default defineConfig({
 			dts: true,
 			resolvers: [
 				IconsResolver({
-					prefix: 'icon',
+					prefix: false,
+					enabledCollections: ['mdi'],
 				}),
 			],
 		}),
