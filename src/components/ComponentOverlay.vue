@@ -9,7 +9,7 @@ const store = useStore();
 </script>
 
 <template>
-  <Transition>
+  <Transition name="scale">
     <div v-if="isOpened" class="fixed top-0 left-0 w-full h-full z-30">
       <div class="absolute inset-0 bg-base-content opacity-50 cursor-pointer" @click="store.$state.overlayOpen = false" />
       <div class="relative my-16 mx-auto max-w-4xl bg-base-100">
@@ -58,13 +58,13 @@ const store = useStore();
 </template>
 
 <style>
-.v-enter-active,
-.v-leave-active {
+.scale-enter-active,
+.scale-leave-active {
   transition: opacity 0.1s linear, transform 0.1s ease-in-out;
 }
 
-.v-enter-from,
-.v-leave-to {
+.scale-enter-from,
+.scale-leave-to {
   opacity: 0;
   transform: scale(1.05) translateY(-5px);
 }

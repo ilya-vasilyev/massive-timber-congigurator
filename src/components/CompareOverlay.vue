@@ -9,63 +9,27 @@ const store = useStore();
 </script>
 
 <template>
-  <Transition>
+  <Transition name="left">
     <div v-if="isOpened" class="fixed top-0 left-0 w-full h-full z-30">
-      <div class="absolute inset-0 bg-base-content opacity-50 cursor-pointer" @click="store.$state.overlayOpen = false" />
-      <div class="relative my-16 mx-auto max-w-4xl bg-base-100">
+      <div class="absolute inset-0 bg-base-content opacity-50 cursor-pointer" @click="store.$state.compareOpen = false" />
+      <div class="absolute right-0 top-0 bottom-0 max-w-sm bg-base-100">
 
-        <div class="grid grid-cols-2 auto-rows-auto p-8">
-          <div class="w-full aspect-[16/9] bg-secondary rounded-lg" />
-
-          <div class="px-4 row-span-2">
-            <div class="form-control w-full">
-              <label class="label">
-                <span class="label-text text-lg">Width</span>
-                <span class="label-text font-bold text-lg">100%</span>
-              </label>
-              <input type="range" min="0" max="100" value="40" class="range range-sm range-accent" />
-            </div>
-            <div class="form-control w-full">
-              <label class="label">
-                <span class="label-text text-lg">Width</span>
-                <span class="label-text font-bold text-lg">100%</span>
-              </label>
-              <input type="range" min="0" max="100" value="40" class="range range-sm range-accent" />
-            </div>
-            <div class="form-control w-full">
-              <label class="label">
-                <span class="label-text text-lg">Width</span>
-                <span class="label-text font-bold text-lg">100%</span>
-              </label>
-              <input type="range" min="0" max="100" value="40" class="range range-sm range-accent" />
-            </div>
-
-          </div>
-
-          <div class="flex gap-1 my-4">
-            <div class="badge">neutral</div>
-            <div class="badge badge-primary">primary</div>
-            <div class="badge badge-secondary">secondary</div>
-            <div class="badge badge-accent">accent</div>
-            <div class="badge badge-ghost">ghost</div>
-          </div>
-          <p>123 123 123 </p>
-        </div>
-        <button class="btn btn-outline mb-4 px-8" @click="store.$state.overlayOpen = false">OK</button>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe voluptates aliquid asperiores aliquam quo molestias explicabo odio voluptatem eius voluptate velit nam dolore ad nesciunt esse rerum, consequatur, quasi commodi.</p>
+        <button class="btn btn-outline mb-4 px-8" @click="store.$state.compareOpen = false">OK</button>
       </div>
     </div>
   </Transition>
 </template>
 
 <style>
-.v-enter-active,
-.v-leave-active {
+.left-enter-active,
+.left-leave-active {
   transition: opacity 0.1s linear, transform 0.1s ease-in-out;
 }
 
-.v-enter-from,
-.v-leave-to {
+.left-enter-from,
+.left-leave-to {
   opacity: 0;
-  transform: scale(1.05) translateY(-5px);
+  transform: scaleX(1.05) translateX(10px);
 }
 </style>
