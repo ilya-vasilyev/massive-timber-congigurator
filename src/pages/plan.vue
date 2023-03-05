@@ -17,7 +17,7 @@ const store = useStore();
 		<main class="grid grid-cols-3 auto-rows-auto">
 
 			<div class="col-span-2 w-full aspect-[4/3] overflow-hidden ring-4 ring-offset-4 ring-secondary rounded-lg">
-				<iframe src="https://hackathon.arendus.pro/4444444444444"
+				<iframe src="https://hackathon.arendus.pro/"
 					class="transition rounded-lg w-[200%] h-[200%] transform scale-50 -translate-x-1/4 -translate-y-1/4 select-none"></iframe>
 			</div>
 
