@@ -11,7 +11,7 @@ useHead({
 </script>
 
 <template>
-<div class="max-w-lg mx-auto my-16 text-center">
+<div class="max-w-2xl mx-auto my-16 text-center">
 		<h1 class="font-display text-4xl mb-8">{{ props.title }}</h1>
     <slot></slot>
 		<nav class="flex gap-2 justify-center my-8">

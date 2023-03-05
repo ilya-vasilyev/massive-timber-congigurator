@@ -34,6 +34,7 @@ declare module '@vue-router/routes' {
     'compare': RouteRecordInfo<'compare', '/compare', Record<never, never>, Record<never, never>>,
     'filter01': RouteRecordInfo<'filter01', '/filter01', Record<never, never>, Record<never, never>>,
     'filter02': RouteRecordInfo<'filter02', '/filter02', Record<never, never>, Record<never, never>>,
+    'filter03': RouteRecordInfo<'filter03', '/filter03', Record<never, never>, Record<never, never>>,
     'plan': RouteRecordInfo<'plan', '/plan', Record<never, never>, Record<never, never>>,
     'results': RouteRecordInfo<'results', '/results', Record<never, never>, Record<never, never>>,
   }

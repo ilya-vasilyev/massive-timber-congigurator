@@ -11,7 +11,7 @@ const store = useStore();
 </script>
 
 <template>
-	<div class="pt-8 mx-auto max-w-5xl text-center">
+	<div class="pt-8 mx-auto max-w-6xl text-center">
 		<!-- <h1 class="font-display text-4xl mb-8">Plan</h1> -->
 
 		<main class="grid grid-cols-3 auto-rows-auto">

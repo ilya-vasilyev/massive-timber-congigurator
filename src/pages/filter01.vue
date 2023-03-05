@@ -6,7 +6,7 @@ const locations = [
 	'Other...'
 ]
 
-const selectedLocation: null | number = ref(null)
+const selectedLocation = ref(-1)
 
 useHead({
 	title: 'Location',
@@ -15,10 +15,11 @@ useHead({
 
 <template>
 	<FilterStep title="Location" back="/" next="filter02">
+		<mdi-earth class="w-24 h-24 mx-auto my-4" />
 		<div class="flex gap-2 justify-center items-center mb-32">
 			<div class="dropdown">
 				<label tabindex="0" class="btn btn-outline justify-between w-64">
-					{{ selectedLocation !== null ? locations[selectedLocation] : "Select a location" }}
+					{{ selectedLocation !== -1 ? locations[selectedLocation] : "Select a location" }}
 					<mdi-menu-down class="w-6 h-6 -mr-1" />
 				</label>
 				<ul tabindex="0" class="dropdown-content menu p-2 shadow-lg bg-base-100 rounded-box mt-2 w-full border-2 border-base-content">
