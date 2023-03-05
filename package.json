@@ -1,6 +1,6 @@
 {
 	"name": "massive-timber-configurator-proto",
-	"description": "Vite starter template with TailwindCSS",
+	"description": "Integrate wood into your construction project",
 	"version": "0.0.1",
 	"main": "src/main.ts",
 	"scripts": {
