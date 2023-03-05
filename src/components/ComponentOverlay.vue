@@ -15,7 +15,7 @@ const store = useStore();
 const components = reactive([
   {
     img: imgFacades,
-    name: 'Facede',
+    name: 'Facade',
     selectedMaterial: 0,
     materials: [
       {
