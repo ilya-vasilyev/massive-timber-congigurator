@@ -106,15 +106,15 @@ const store = useStore();
                 (((open comparison {{ store.$state.compareOpen }})))
               </button> -->
 
-        <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
+        <button class="btn btn-outline mb-4 w-full">
           <mdi-download class="w-6 h-6 mr-2 -ml-2" />
           Download model (.ifc)
         </button>
-        <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
+        <button class="btn btn-outline mb-4 w-full">
           <mdi-download class="w-6 h-6 mr-2 -ml-2" />
           Download results (.pdf)
         </button>
-        <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
+        <button class="btn btn-outline mb-4 w-full">
           <mdi-download class="w-6 h-6 mr-2 -ml-2" />
           Download LCA (.csv)
         </button>
