@@ -3,6 +3,7 @@ import FilterStep from '@/components/FilterStep.vue';
 
 const locations = [
 	'Denmark',
+	'San-Francisco',
 	'Other...'
 ]
 
