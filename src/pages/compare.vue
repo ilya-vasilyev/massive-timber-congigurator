@@ -21,16 +21,16 @@ const selectedVariant = ref(1)
           <h2 class="card-title">Variant 1</h2>
           <div class="badge badge-primary opacity-0">recommended</div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Price</p>
+            <b>227€/m<sup>2</sup></b>
           </div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Embodied carbon</p>
+            <b>326.1kg</b>
           </div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Volume</p>
+            <b>0.41m<sup>3</sup></b>
           </div>
           <div class="divider my-0"></div>
           <div class="card-actions">
@@ -49,16 +49,16 @@ const selectedVariant = ref(1)
           <h2 class="card-title">Variant 2</h2>
           <div class="badge badge-primary">recommended</div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Price</p>
+            <b>294€/m<sup>2</sup></b>
           </div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Embodied carbon</p>
+            <b>286.7kg</b>
           </div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Volume</p>
+            <b>0.31m<sup>3</sup></b>
           </div>
           <div class="divider my-0"></div>
           <div class="card-actions">
@@ -76,16 +76,16 @@ const selectedVariant = ref(1)
           <h2 class="card-title">Variant 3</h2>
           <div class="badge badge-primary opacity-0">recommended</div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Price</p>
+            <b>541€/m<sup>2</sup></b>
           </div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Embodied carbon</p>
+            <b>423.9kg</b>
           </div>
           <div>
-            <p>metric</p>
-            <b>value</b>
+            <p>Volume</p>
+            <b>0.72m<sup>3</sup></b>
           </div>
           <div class="divider my-0"></div>
           <div class="card-actions">

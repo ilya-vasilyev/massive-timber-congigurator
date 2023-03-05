@@ -19,9 +19,9 @@ const store = useStore();
         
         <div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-8">
           <div class="stat">
-            <div class="stat-title">Price (structure)</div>
+            <div class="stat-title">Price</div>
             <div class="stat-value">294€/m<sup>2</sup></div>
-            <!-- <div class="stat-desc">Jan 1st - Feb 1st</div> -->
+            <div class="stat-desc">(structure)</div>
             <!-- <div class="stat-figure text-secondary">
               <mdi-house class="w-10 h-10" />
             </div> -->
