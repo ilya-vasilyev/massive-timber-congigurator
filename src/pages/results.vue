@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import CompareOverlay from '@/components/CompareOverlay.vue';
 import { useStore } from '@/store';
+import finalScreen from '@/assets/final-screen.png';
+
 useHead({
   title: 'Masstimber configurator',
 });
@@ -13,31 +15,32 @@ const store = useStore();
 
     <div class="grid grid-cols-3 auto-rows-auto">
       <section class="col-span-2">
-        <div class="w-full aspect-[16/9] bg-secondary rounded-lg mb-8" />
+        <img :src="finalScreen" class="w-full aspect-[16/9] bg-secondary rounded-lg mb-8" />
+        
         <div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-8">
           <div class="stat">
-            <div class="stat-title">Downloads</div>
+            <div class="stat-title">Price per m<sup>3</sup></div>
             <div class="stat-value">31K</div>
-            <div class="stat-desc">Jan 1st - Feb 1st</div>
-            <div class="stat-figure text-secondary">
+            <!-- <div class="stat-desc">Jan 1st - Feb 1st</div> -->
+            <!-- <div class="stat-figure text-secondary">
               <mdi-house class="w-10 h-10" />
-            </div>
+            </div> -->
           </div>
           <div class="stat">
-            <div class="stat-title">New Users</div>
-            <div class="stat-value">4,200</div>
-            <div class="stat-desc">↗︎ 400 (22%)</div>
-            <div class="stat-figure text-secondary">
+            <div class="stat-title">Embodied carbon per m<sup>2</sup></div>
+            <div class="stat-value">6.49<small>E</small>+2</div>
+            <!-- <div class="stat-desc">↗︎ 400 (22%)</div> -->
+            <!-- <div class="stat-figure text-secondary">
               <mdi-house class="w-10 h-10" />
-            </div>
+            </div> -->
           </div>
           <div class="stat">
             <div class="stat-title">New Registers</div>
             <div class="stat-value">1,200</div>
-            <div class="stat-desc">↘︎ 90 (14%)</div>
-            <div class="stat-figure text-secondary">
+            <!-- <div class="stat-desc">↘︎ 90 (14%)</div> -->
+            <!-- <div class="stat-figure text-secondary">
               <mdi-house class="w-10 h-10" />
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -49,7 +52,7 @@ const store = useStore();
             <thead>
               <tr>
                 <th></th>
-                <th>Metric</th>
+                <th>Volume</th>
                 <th>Metric</th>
                 <th class="text-right">Price</th>
               </tr>
@@ -58,44 +61,44 @@ const store = useStore();
               <!-- row 1 -->
               <tr class="hover">
                 <th>Facades</th>
+                <td>80 m<sup>3</sup></td>
                 <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
+                <td class="text-right">€76 000</td>
               </tr>
               <!-- row 2 -->
               <tr class="hover">
                 <th>Columns</th>
+                <td>76.8 m<sup>3</sup></td>
                 <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
+                <td class="text-right">€72 200</td>
               </tr>
               <!-- row 3 -->
               <tr class="hover">
                 <th>Beams</th>
+                <td>235.2 m<sup>3</sup></td>
                 <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
+                <td class="text-right">€223 250</td>
               </tr>
               <!-- row 4 -->
               <tr class="hover">
                 <th>Floors</th>
+                <td>706.6 m<sup>3</sup></td>
                 <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
+                <td class="text-right">€670 700</td>
               </tr>
               <!-- total -->
               <tr class="hover font-bold border-t-2">
                 <th>TOTAL</th>
+                <td>1097.6 m<sup>3</sup></td>
                 <td></td>
-                <td></td>
-                <td class="text-right">€123 000</td>
+                <td class="text-right">€1 042 150</td>
               </tr>
             </tbody>
         </table>
       </div>
 
-        <div class="w-full aspect-[16/9] bg-secondary rounded-lg my-8" />
-        <div class="w-full aspect-[16/9] bg-secondary rounded-lg my-8" />
+        <!-- <div class="w-full aspect-[16/9] bg-secondary rounded-lg my-8" />
+        <div class="w-full aspect-[16/9] bg-secondary rounded-lg my-8" /> -->
       </section>
 
       <aside class="px-4">
