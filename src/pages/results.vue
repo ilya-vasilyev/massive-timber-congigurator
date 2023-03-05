@@ -105,15 +105,15 @@ const store = useStore();
 
         <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
           <mdi-download class="w-6 h-6 mr-2 -ml-2" />
-          Download model (.3dm)
+          Download model (.ifc)
         </button>
         <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
           <mdi-download class="w-6 h-6 mr-2 -ml-2" />
-          Download specs (.csv)
+          Download results (.pdf)
         </button>
         <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
           <mdi-download class="w-6 h-6 mr-2 -ml-2" />
-          Download LCA (.xlsx)
+          Download LCA (.csv)
         </button>
 
       </aside>

@@ -210,7 +210,7 @@ const timbers = ['CLT', 'LVL', "GLULAM"]
 
             <div class="col-span-2 mt-4">
 
-              <p class="text-left font-bold px-2">(GWP - kg CO<sub>2</sub>e)</p>
+              <p class="text-left font-bold px-2">Global warming potential (kg CO<sub>2</sub>e)</p>
               <div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 mt-2">
                 <div class="stat">
                   <div class="stat-title">Product stage:</div>

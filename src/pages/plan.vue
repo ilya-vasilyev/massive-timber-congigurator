@@ -42,6 +42,30 @@ const store = useStore();
 
 				<div class="divider" />
 
+				<div class="form-control">
+					<label class="label">
+						<span class="label-text text-lg">Optimize for:</span>
+					</label>
+					<label class="label cursor-pointer justify-start gap-2">
+						<input type="radio" name="radio-10" class="radio radio-primary focus:radio-primary hover:radio-primary border-2 peer" checked />
+						<span class="label-text peer-checked:font-bold">Smaller SIZE</span>
+					</label>
+				</div>
+				<div class="form-control">
+					<label class="label cursor-pointer justify-start gap-2">
+						<input type="radio" name="radio-10" class="radio radio-primary focus:radio-primary hover:radio-primary border-2 peer" checked />
+						<span class="label-text peer-checked:font-bold">Lower PRICE</span>
+					</label>
+				</div>
+				<div class="form-control">
+					<label class="label cursor-pointer justify-start gap-2">
+						<input type="radio" name="radio-10" class="radio radio-primary focus:radio-primary hover:radio-primary border-2 peer" checked />
+						<span class="label-text peer-checked:font-bold">Lower EMBODIED CARBON</span>
+					</label>
+				</div>
+
+				<div class="divider" />
+
 				<p class="mb-4">Edit</p>
 
 				<button class="btn btn-accent btn-outline w-full my-2"
@@ -69,7 +93,8 @@ const store = useStore();
 
 			<div class="col-span-2">
 
-				<div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-8">
+				<p class="text-left font-bold px-2 mt-8">Global warming potential (kg CO<sub>2</sub>e per km)</p>
+				<div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-4">
 					<div class="stat">
 						<div class="stat-title">Truck</div>
 						<div class="stat-value">6.44<small>E</small>-5</div>

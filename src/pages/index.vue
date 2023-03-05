@@ -12,7 +12,7 @@ const store = useStore();
 <template>
   <main class="max-w-lg mx-auto my-16 text-center">
     <h1 class="font-display text-7xl mb-4 text-center">Mass<span class="text-accent">timber</span> CONFIGURATOR</h1>
-    <p class="text-lg opacity-75">(((Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dolorem earum labore.)))</p>
+    <p class="text-lg opacity-75">Integrate wood into your construction project</p>
 
     <div class="flex justify-center gap-4 my-4">
       <img :src="SkullLogo" width="150" height="150" />
