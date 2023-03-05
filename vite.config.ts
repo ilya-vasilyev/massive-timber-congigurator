@@ -70,8 +70,8 @@ export default defineConfig({
 			],
 			manifest: {
 				name: 'Vitailse',
-				short_name: 'Vitailse',
-				description: 'Opinionated vite template with TailwindCSS',
+				short_name: 'Masstimber configurator',
+				description: 'Integrate wood into your construction project	',
 				theme_color: '#076AE0',
 				icons: [
 					{
