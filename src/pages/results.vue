@@ -19,25 +19,25 @@ const store = useStore();
         
         <div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-8">
           <div class="stat">
-            <div class="stat-title">Price per m<sup>3</sup></div>
-            <div class="stat-value">31K</div>
+            <div class="stat-title">Price (structure)</div>
+            <div class="stat-value">294€/m<sup>2</sup></div>
             <!-- <div class="stat-desc">Jan 1st - Feb 1st</div> -->
             <!-- <div class="stat-figure text-secondary">
               <mdi-house class="w-10 h-10" />
             </div> -->
           </div>
           <div class="stat">
-            <div class="stat-title">Embodied carbon per m<sup>2</sup></div>
-            <div class="stat-value">6.49<small>E</small>+2</div>
-            <!-- <div class="stat-desc">↗︎ 400 (22%)</div> -->
+            <div class="stat-title">Embodied carbon (structure)</div>
+            <div class="stat-value">286.7kg</div>
+            <div class="stat-desc">CO2 eq / m<sup>2</sup></div>
             <!-- <div class="stat-figure text-secondary">
               <mdi-house class="w-10 h-10" />
             </div> -->
           </div>
           <div class="stat">
-            <div class="stat-title">New Registers</div>
-            <div class="stat-value">1,200</div>
-            <!-- <div class="stat-desc">↘︎ 90 (14%)</div> -->
+            <div class="stat-title">Volume (structure)</div>
+            <div class="stat-value">0.31m<sup>3</sup></div>
+            <div class="stat-desc">timber / m<sup>2</sup> floor</div>
             <!-- <div class="stat-figure text-secondary">
               <mdi-house class="w-10 h-10" />
             </div> -->
