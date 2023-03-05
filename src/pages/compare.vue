@@ -5,7 +5,7 @@ useHead({
 });
 const store = useStore();
 
-const selectedVariant = ref(-1)
+const selectedVariant = ref(1)
 </script>
 
 <template>
@@ -68,7 +68,7 @@ const selectedVariant = ref(-1)
 
     <nav class="flex gap-2 justify-center py-4 bg-base-100 sticky bottom-0">
       <router-link :to="{ name: 'results' }" class="btn btn-outline btn-wide">
-        <mdi-chevron-left class="w-6 h-6 -ml-2 mr-2" />back</router-link>
+        <mdi-chevron-left class="w-6 h-6 -ml-2 mr-2" />Back</router-link>
       <router-link :to="{ name: 'home' }" class="btn btn-primary btn-wide">
         <mdi-flag-outline class="w-6 h-6 -ml-2 mr-2" />Finish</router-link>
     </nav>

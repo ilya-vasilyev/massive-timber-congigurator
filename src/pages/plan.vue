@@ -71,27 +71,27 @@ const store = useStore();
 
 				<div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-8">
 					<div class="stat">
-						<div class="stat-title">Downloads</div>
-						<div class="stat-value">31K</div>
-						<div class="stat-desc">Jan 1st - Feb 1st</div>
+						<div class="stat-title">Truck</div>
+						<div class="stat-value">6.44<small>E</small>-5</div>
+						<div class="stat-desc">>26 tonns</div>
 						<div class="stat-figure text-secondary">
-							<mdi-house class="w-10 h-10" />
+							<mdi-truck class="w-10 h-10" />
 						</div>
 					</div>
 					<div class="stat">
-						<div class="stat-title">New Users</div>
-						<div class="stat-value">4,200</div>
-						<div class="stat-desc">↗︎ 400 (22%)</div>
+						<div class="stat-title">Train</div>
+						<div class="stat-value">1.88<small>E</small>-5</div>
+						<!-- <div class="stat-desc">↗︎ 400 (22%)</div> -->
 						<div class="stat-figure text-secondary">
-							<mdi-house class="w-10 h-10" />
+							<mdi-train class="w-10 h-10" />
 						</div>
 					</div>
 					<div class="stat">
-						<div class="stat-title">New Registers</div>
-						<div class="stat-value">1,200</div>
-						<div class="stat-desc">↘︎ 90 (14%)</div>
+						<div class="stat-title">Container ship</div>
+						<div class="stat-value">9.01<small>E</small>-6</div>
+						<!-- <div class="stat-desc">↘︎ 90 (14%)</div> -->
 						<div class="stat-figure text-secondary">
-							<mdi-house class="w-10 h-10" />
+							<mdi-ferry class="w-10 h-10" />
 						</div>
 					</div>
 				</div>

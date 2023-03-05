@@ -54,6 +54,14 @@ useHead({
 				</div>
 			</div>
 
+			<div class="card w-48 bg-base-100 shadow-lg card-bordered border-2 ring-primary cursor-pointer transition-all duration-200"
+				:class="typeIndex === 5 ? 'ring-4 ring-offset-4 border-primary shadow-2xl' : ''" @click="typeIndex = 5">
+				<mdi-hammer-wrench class="w-24 h-24 mx-auto mt-4 text-[#999]" />
+				<div class="card-body items-center text-center p-4">
+					<h2 class="card-title text-base">Renovation</h2>
+				</div>
+			</div>
+
 
 		</div>
 	</FilterStep>
