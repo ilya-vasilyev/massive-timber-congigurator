@@ -20,7 +20,18 @@ const selectedVariant = ref(1)
         <div class="card-body items-center">
           <h2 class="card-title">Variant 1</h2>
           <div class="badge badge-primary opacity-0">recommended</div>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
           <div class="divider my-0"></div>
           <div class="card-actions">
             <button class="btn w-full btn-outline btn-sm"
@@ -37,7 +48,18 @@ const selectedVariant = ref(1)
         <div class="card-body items-center">
           <h2 class="card-title">Variant 2</h2>
           <div class="badge badge-primary">recommended</div>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
           <div class="divider my-0"></div>
           <div class="card-actions">
             <button class="btn w-full btn-outline btn-sm"
@@ -53,7 +75,18 @@ const selectedVariant = ref(1)
         <div class="card-body items-center">
           <h2 class="card-title">Variant 3</h2>
           <div class="badge badge-primary opacity-0">recommended</div>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
+          <div>
+            <p>metric</p>
+            <b>value</b>
+          </div>
           <div class="divider my-0"></div>
           <div class="card-actions">
             <button class="btn w-full btn-outline btn-sm"

@@ -53,7 +53,7 @@ const store = useStore();
               <tr>
                 <th></th>
                 <th>Volume</th>
-                <th>Metric</th>
+                <th>T CO<sub>2</sub> e</th>
                 <th class="text-right">Price</th>
               </tr>
             </thead>
@@ -62,35 +62,35 @@ const store = useStore();
               <tr class="hover">
                 <th>Facades</th>
                 <td>80 m<sup>3</sup></td>
-                <td>123</td>
+                <td>51.92</td>
                 <td class="text-right">€76 000</td>
               </tr>
               <!-- row 2 -->
               <tr class="hover">
                 <th>Columns</th>
                 <td>76.8 m<sup>3</sup></td>
-                <td>123</td>
+                <td>49.8</td>
                 <td class="text-right">€72 200</td>
               </tr>
               <!-- row 3 -->
               <tr class="hover">
                 <th>Beams</th>
                 <td>235.2 m<sup>3</sup></td>
-                <td>123</td>
+                <td>152.7</td>
                 <td class="text-right">€223 250</td>
               </tr>
               <!-- row 4 -->
               <tr class="hover">
                 <th>Floors</th>
                 <td>706.6 m<sup>3</sup></td>
-                <td>123</td>
+                <td>458.5</td>
                 <td class="text-right">€670 700</td>
               </tr>
               <!-- total -->
               <tr class="hover font-bold border-t-2">
                 <th>TOTAL</th>
                 <td>1097.6 m<sup>3</sup></td>
-                <td></td>
+                <td>1012.9</td>
                 <td class="text-right">€1 042 150</td>
               </tr>
             </tbody>
