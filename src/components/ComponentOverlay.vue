@@ -24,7 +24,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-green-600">2.68<small>E</small>+0</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">8.14<small>E</small>+2</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€5 330</div>',
         timbers: ['Timber frame', 'Solid wood', 'Timber mulion']
       }, {
         name: "Prefab concrete",
@@ -32,7 +32,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-red-600">4.69<small>E</small>+2</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">7.76<small>E</small>+0</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€7 012</div>',
         timbers: []
       }, {
         name: "Steel / Aluminium",
@@ -40,7 +40,7 @@ const components = reactive([
         buildStage: '<div class="stat-value">1.89<small>E</small>+1</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">1.2<small>E</small>+1</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€8 288</div>',
         timbers: []
       },
 
@@ -57,7 +57,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-green-600">3.16<small>E</small>+0</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">7.67<small>E</small>+2</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€324</div>',
         timbers: ["GLULAM", "LVL", "KVH"]
       }, {
         name: "Prefab concrete",
@@ -65,7 +65,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-red-600">4.69<small>E</small>+1</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">7.76<small>E</small>+0</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€587</div>',
         timbers: []
       }, {
         name: "Steel / Aluminium",
@@ -73,7 +73,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-green-600">6.59<small>E</small>-1</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">4.23<small>E</small>+1</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€617</div>',
         timbers: []
       },
 
@@ -90,7 +90,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-green-600">4.42<small>E</small>+0</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">7.5<small>E</small>+2</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€658</div>',
         timbers: ["GLULAM", "LVL", "KVH"]
       }, {
         name: "Prefab concrete",
@@ -98,7 +98,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-red-600">9.1<small>E</small>+0</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">12.03<small>E</small>+0</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€881</div>',
         timbers: []
       }, {
         name: "Steel / Aluminium",
@@ -106,7 +106,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-red-600">6.59<small>E</small>-1</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">4.23<small>E</small>+1</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€990</div>',
         timbers: []
       },
 
@@ -123,7 +123,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-green-600">4.09<small>E</small>+0</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">2.28<small>E</small>+2</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€201</div>',
         timbers: ['CLT', "GLULAM", "I-Joist"]
       }, {
         name: "Prefab concrete",
@@ -131,7 +131,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-red-600">5.18<small>E</small>+1</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">4.63<small>E</small>+1</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€443</div>',
         timbers: []
       }, {
         name: "Steel / Aluminium",
@@ -139,7 +139,7 @@ const components = reactive([
         buildStage: '<div class="stat-value text-red-600">7.21<small>E</small>+0</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">4.5<small>E</small>+0</div>',
-        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€620</div>',
         timbers: []
       },
 
