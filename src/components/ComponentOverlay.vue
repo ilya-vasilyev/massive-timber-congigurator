@@ -23,19 +23,22 @@ const components = reactive([
         prodStage: '<div class="stat-value">8.60<small>E</small>+3</div>',
         buildStage: '<div class="stat-value text-green-600">2.68<small>E</small>+0</div>',
         usingStage: '<div class="stat-value">0</div>',
-        eolStage: '<div class="stat-value">8.14<small>E</small>+02</div>',
+        eolStage: '<div class="stat-value">8.14<small>E</small>+2</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
         name: "Prefab concrete",
         prodStage: '<div class="stat-value">2.38<small>E</small>+3</div>',
-        buildStage: '<div class="stat-value text-red-600">4.69<small>E</small>+02</div>',
+        buildStage: '<div class="stat-value text-red-600">4.69<small>E</small>+2</div>',
         usingStage: '<div class="stat-value">0</div>',
         eolStage: '<div class="stat-value">7.76<small>E</small>+0</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
         name: "Steel / Aluminium",
-        prodStage: '<div class="stat-value text-red-600">8.60<small>E</small>+3</div>',
-        buildStage: '<div class="stat-value">2.68<small>E</small>+0</div>',
+        prodStage: '<div class="stat-value text-red-600">1.7<small>E</small>+3</div>',
+        buildStage: '<div class="stat-value">1.89<small>E</small>+1</div>',
         usingStage: '<div class="stat-value">0</div>',
-        eolStage: '<div class="stat-value">8.14<small>E</small>+02</div>',
+        eolStage: '<div class="stat-value">1.2<small>E</small>+1</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       },
 
     ]
@@ -46,11 +49,26 @@ const components = reactive([
     selectedMaterial: 0,
     materials: [
       {
-        name: "CLT"
+        name: "CLT",
+        prodStage: '<div class="stat-value">6.46<small>E</small>+2</div>',
+        buildStage: '<div class="stat-value text-green-600">3.16<small>E</small>+0</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">7.67<small>E</small>+2</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
-        name: "Prefab concrete"
+        name: "Prefab concrete",
+        prodStage: '<div class="stat-value">2.38<small>E</small>+2</div>',
+        buildStage: '<div class="stat-value text-red-600">4.69<small>E</small>+1</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">7.76<small>E</small>+0</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
-        name: "Steel / Aluminium"
+        name: "Steel / Aluminium",
+        prodStage: '<div class="stat-value">1.05<small>E</small>+3</div>',
+        buildStage: '<div class="stat-value text-green-600">6.59<small>E</small>-1</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">4.23<small>E</small>+1</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       },
 
     ]
@@ -61,11 +79,26 @@ const components = reactive([
     selectedMaterial: 0,
     materials: [
       {
-        name: "CLT"
+        name: "CLT",
+        prodStage: '<div class="stat-value">6.81<small>E</small>+2</div>',
+        buildStage: '<div class="stat-value text-green-600">4.42<small>E</small>+0</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">7.5<small>E</small>+2</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
-        name: "Prefab concrete"
+        name: "Prefab concrete",
+        prodStage: '<div class="stat-value">7.16<small>E</small>+2</div>',
+        buildStage: '<div class="stat-value text-red-600">9.1<small>E</small>+0</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">12.03<small>E</small>+0</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
-        name: "Steel / Aluminium"
+        name: "Steel / Aluminium",
+        prodStage: '<div class="stat-value">1.05<small>E</small>+3</div>',
+        buildStage: '<div class="stat-value text-red-600">6.59<small>E</small>-1</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">4.23<small>E</small>+1</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       },
 
     ]
@@ -76,11 +109,26 @@ const components = reactive([
     selectedMaterial: 0,
     materials: [
       {
-        name: "CLT"
+        name: "CLT",
+        prodStage: '<div class="stat-value">1.81<small>E</small>+2</div>',
+        buildStage: '<div class="stat-value text-green-600">4.09<small>E</small>+0</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">2.28<small>E</small>+2</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
-        name: "Prefab concrete"
+        name: "Prefab concrete",
+        prodStage: '<div class="stat-value">1.55<small>E</small>+2</div>',
+        buildStage: '<div class="stat-value text-red-600">5.18<small>E</small>+1</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">4.63<small>E</small>+1</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       }, {
-        name: "Steel / Aluminium"
+        name: "Steel / Aluminium",
+        prodStage: '<div class="stat-value">4.22<small>E</small>+2</div>',
+        buildStage: '<div class="stat-value text-red-600">7.21<small>E</small>+0</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">4.5<small>E</small>+0</div>',
+        price: '<div class="stat-value border-b-4 border-accent">€1230</div>',
       },
 
     ]
@@ -121,7 +169,7 @@ const components = reactive([
                   <span class="label-text text-lg">Producer</span>
                 </label>
                 <select class="select select-bordered select-accent border-2">
-                  <option disabled selected>Pick producer...</option>
+                  <option disabled selected>Pick a producer...</option>
                   <option>Producer 001</option>
                   <option>Producer 002</option>
                   <option>Producer 003</option>
@@ -138,26 +186,29 @@ const components = reactive([
                 <div class="stat">
                   <div class="stat-title">Product stage:</div>
                   <div v-html="component.materials[component.selectedMaterial].prodStage"></div>
-                  <div class="stat-figure text-secondary">
+                  <!-- <div class="stat-figure text-secondary">
                     <mdi-factory class="w-10 h-10" />
-                  </div>
+                  </div> -->
                 </div>
                 <div class="stat">
                   <div class="stat-title">Building process</div>
                   <div v-html="component.materials[component.selectedMaterial].buildStage"></div>
-                  <div class="stat-figure text-secondary">
+                  <!-- <div class="stat-figure text-secondary">
                     <mdi-crane class="w-10 h-10" />
-                  </div>
+                  </div> -->
                 </div>
                 <div class="stat">
                   <div class="stat-title">Using stage</div>
                   <div v-html="component.materials[component.selectedMaterial].usingStage"></div>
                   <div class="stat-desc">({{ component.selectedMaterial === 1 ? '100' : '50' }} year cycle)</div>
-                  
                 </div>
                 <div class="stat">
                   <div class="stat-title">EOL stage</div>
                   <div v-html="component.materials[component.selectedMaterial].eolStage"></div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Component price</div>
+                  <div v-html="component.materials[component.selectedMaterial].price"></div>
                 </div>
               </div>
             </div>

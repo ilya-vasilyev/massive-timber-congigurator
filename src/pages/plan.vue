@@ -56,7 +56,7 @@ const store = useStore();
 				</button>
 				<button class="btn btn-accent btn-outline w-full my-2"
 					@click="store.$state.selectedComponent = 2; store.$state.overlayOpen = !store.$state.overlayOpen">
-					<span class="text-base-content">Columns and beams</span>
+					<span class="text-base-content">Beams</span>
 					<mdi-border-horizontal class="w-6 h-6 ml-auto text-base-content" />
 				</button>
 				<button class="btn btn-accent btn-outline w-full my-2"
