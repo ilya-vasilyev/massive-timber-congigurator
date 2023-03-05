@@ -15,7 +15,7 @@ useHead({
 
 <template>
 	<FilterStep title="Location" back="/" next="filter02">
-		<mdi-earth class="w-24 h-24 mx-auto my-4" />
+		<mdi-earth class="w-24 h-24 mx-auto my-4 text-[#666]" />
 		<div class="flex gap-2 justify-center items-center mb-32">
 			<div class="dropdown">
 				<label tabindex="0" class="btn btn-outline justify-between w-64">

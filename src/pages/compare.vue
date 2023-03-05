@@ -1,125 +1,70 @@
 <script setup lang="ts">
-import CompareOverlay from '@/components/CompareOverlay.vue';
 import { useStore } from '@/store';
 useHead({
   title: 'Masstimber configurator',
 });
 const store = useStore();
+
+const selectedVariant = ref(-1)
 </script>
 
 <template>
   <main class="max-w-5xl mx-auto mt-16 text-center">
     <h1 class="font-display text-4xl text-center mb-16">Compare results</h1>
 
-    <div class="grid grid-cols-3 auto-rows-auto">
-      <section class="col-span-2">
-        <div class="w-full aspect-[16/9] bg-secondary rounded-lg mb-8" />
-        <div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 my-8">
-          <div class="stat">
-            <div class="stat-title">Downloads</div>
-            <div class="stat-value">31K</div>
-            <div class="stat-desc">Jan 1st - Feb 1st</div>
-            <div class="stat-figure text-secondary">
-              <mdi-house class="w-10 h-10" />
-            </div>
-          </div>
-          <div class="stat">
-            <div class="stat-title">New Users</div>
-            <div class="stat-value">4,200</div>
-            <div class="stat-desc">↗︎ 400 (22%)</div>
-            <div class="stat-figure text-secondary">
-              <mdi-house class="w-10 h-10" />
-            </div>
-          </div>
-          <div class="stat">
-            <div class="stat-title">New Registers</div>
-            <div class="stat-value">1,200</div>
-            <div class="stat-desc">↘︎ 90 (14%)</div>
-            <div class="stat-figure text-secondary">
-              <mdi-house class="w-10 h-10" />
-            </div>
+
+    <section class="flex gap-4 my-16 justify-center">
+
+      <div class="card card-bordered border-2 w-56 bg-base-100 shadow-xl transition-all duration-200"
+        :class="selectedVariant === 0 ? 'border-primary ring-4 ring-offset-4 ring-primary' : ''">
+        <div class="card-body items-center">
+          <h2 class="card-title">Variant 1</h2>
+          <div class="badge badge-primary opacity-0">recommended</div>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="divider my-0"></div>
+          <div class="card-actions">
+            <button class="btn w-full btn-outline btn-sm"
+              :class="selectedVariant === 0 ? 'btn-disabled' : 'btn-primary btn-outline'"
+              @click="selectedVariant = 0"><span class="text-base-content">{{ selectedVariant === 0 ? 'Selected' :
+                'Select'
+              }}</span></button>
           </div>
         </div>
-
-        <div class="divider"></div>
-
-        <div class="overflow-x-auto my-8">
-          <table class="table w-full">
-            <!-- head -->
-            <thead>
-              <tr>
-                <th></th>
-                <th>Metric</th>
-                <th>Metric</th>
-                <th class="text-right">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- row 1 -->
-              <tr class="hover">
-                <th>Facades</th>
-                <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
-              </tr>
-              <!-- row 2 -->
-              <tr class="hover">
-                <th>Columns</th>
-                <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
-              </tr>
-              <!-- row 3 -->
-              <tr class="hover">
-                <th>Beams</th>
-                <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
-              </tr>
-              <!-- row 4 -->
-              <tr class="hover">
-                <th>Floors</th>
-                <td>123</td>
-                <td>123</td>
-                <td class="text-right">€1 230</td>
-              </tr>
-              <!-- total -->
-              <tr class="hover font-bold border-t-2">
-                <th>TOTAL</th>
-                <td></td>
-                <td></td>
-                <td class="text-right">€123 000</td>
-              </tr>
-            </tbody>
-        </table>
       </div>
 
-        <div class="w-full aspect-[16/9] bg-secondary rounded-lg my-8" />
-        <div class="w-full aspect-[16/9] bg-secondary rounded-lg my-8" />
-      </section>
+      <div class="card card-bordered border-2 w-56 bg-base-100 shadow-xl transition-all duration-200"
+        :class="selectedVariant === 1 ? 'border-primary ring-4 ring-offset-4 ring-primary' : ''">
+        <div class="card-body items-center">
+          <h2 class="card-title">Variant 2</h2>
+          <div class="badge badge-primary">recommended</div>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="divider my-0"></div>
+          <div class="card-actions">
+            <button class="btn w-full btn-outline btn-sm"
+              :class="selectedVariant === 1 ? 'btn-disabled' : 'btn-primary btn-outline'"
+              @click="selectedVariant = 1"><span class="text-base-content">
+                {{ selectedVariant === 1 ? 'Selected' : 'Select' }} </span></button>
+          </div>
+        </div>
+      </div>
 
-      <aside class="px-4">
-        <!-- <button class="btn btn-sm btn-outline my-4" @click="store.$state.compareOpen = !store.$state.compareOpen">
-                (((open comparison {{ store.$state.compareOpen }})))
-              </button> -->
+      <div class="card card-bordered border-2 w-56 bg-base-100 shadow-xl transition-all duration-200"
+        :class="selectedVariant === 2 ? 'border-primary ring-4 ring-offset-4 ring-primary' : ''">
+        <div class="card-body items-center">
+          <h2 class="card-title">Variant 3</h2>
+          <div class="badge badge-primary opacity-0">recommended</div>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="divider my-0"></div>
+          <div class="card-actions">
+            <button class="btn w-full btn-outline btn-sm"
+              :class="selectedVariant === 2 ? 'btn-disabled' : 'btn-primary btn-outline'"
+              @click="selectedVariant = 2"><span class="text-base-content">{{ selectedVariant === 2 ? 'Selected' :
+                'Select' }}</span></button>
+          </div>
+        </div>
+      </div>
 
-        <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
-          <mdi-download class="w-6 h-6 mr-2 -ml-2" />
-          Download model (.3dm)
-        </button>
-        <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
-          <mdi-download class="w-6 h-6 mr-2 -ml-2" />
-          Download specs (.csv)
-        </button>
-        <button class="btn btn-outline mb-4 w-full" @click="store.$state.compareOpen = !store.$state.compareOpen">
-          <mdi-download class="w-6 h-6 mr-2 -ml-2" />
-          Download LCA (.xlsx)
-        </button>
-
-      </aside>
-    </div>
-
-    <CompareOverlay :is-opened="store.$state.compareOpen" />
+    </section>
 
     <nav class="flex gap-2 justify-center py-4 bg-base-100 sticky bottom-0">
       <router-link :to="{ name: 'results' }" class="btn btn-outline btn-wide">
