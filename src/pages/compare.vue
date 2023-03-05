@@ -9,7 +9,7 @@ const store = useStore();
 
 <template>
   <main class="max-w-5xl mx-auto mt-16 text-center">
-    <h1 class="font-display text-4xl text-center mb-16">Results</h1>
+    <h1 class="font-display text-4xl text-center mb-16">Compare results</h1>
 
     <div class="grid grid-cols-3 auto-rows-auto">
       <section class="col-span-2">
@@ -122,14 +122,14 @@ const store = useStore();
     <CompareOverlay :is-opened="store.$state.compareOpen" />
 
     <nav class="flex gap-2 justify-center py-4 bg-base-100 sticky bottom-0">
-      <router-link :to="{ name: 'plan' }" class="btn btn-outline btn-wide">
+      <router-link :to="{ name: 'results' }" class="btn btn-outline btn-wide">
         <mdi-chevron-left class="w-6 h-6 -ml-2 mr-2" />back</router-link>
-      <router-link :to="{ name: 'compare' }" class="btn btn-primary btn-wide">
-        <mdi-scale-unbalanced class="w-6 h-6 -ml-2 mr-2" />Compare</router-link>
+      <router-link :to="{ name: 'home' }" class="btn btn-primary btn-wide">
+        <mdi-flag-outline class="w-6 h-6 -ml-2 mr-2" />Finish</router-link>
     </nav>
   </main>
 </template>
 
 <route lang="yaml">
-  name: results
+  name: compare
 </route>

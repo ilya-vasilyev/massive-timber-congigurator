@@ -103,14 +103,14 @@ const store = useStore();
 		<ComponentOverlay :is-opened="store.$state.overlayOpen" :selected="store.$state.selectedComponent" />
 
 
-		<nav class="flex gap-2 justify-center py-8 bg-base-100 sticky bottom-0">
+		<nav class="flex gap-2 justify-center py-4 bg-base-100 sticky bottom-0">
 			<router-link :to="{ name: 'filter02' }" class="btn btn-outline btn-wide">
 				<mdi-chevron-left class="w-6 h-6 -ml-2 mr-2" />
 				Back
 			</router-link>
 			<router-link :to="{ name: 'results' }" class="btn btn-primary btn-wide">
+				<mdi-chart-bar class="w-6 h-6 mr-2 -ml-2" />
 				Results
-				<mdi-chevron-right class="w-6 h-6 ml-2 -mr-2" />
 			</router-link>
 		</nav>
 	</div>
