@@ -17,7 +17,7 @@ const store = useStore();
 		<main class="grid grid-cols-3 auto-rows-auto">
 
 			<div class="col-span-2 w-full aspect-[4/3] overflow-hidden ring-4 ring-offset-4 ring-secondary rounded-lg">
-				<iframe src="https://hackathon.arendus.pro/"
+				<iframe src="https://hackathon.arendus.pro/4444444444444"
 					class="transition rounded-lg w-[200%] h-[200%] transform scale-50 -translate-x-1/4 -translate-y-1/4 select-none"></iframe>
 			</div>
 
@@ -51,11 +51,16 @@ const store = useStore();
 				</button>
 				<button class="btn btn-accent btn-outline w-full my-2"
 					@click="store.$state.selectedComponent = 1; store.$state.overlayOpen = !store.$state.overlayOpen">
-					<span class="text-base-content">Columns and beams</span>
-					<mdi-border-inside class="w-6 h-6 ml-auto text-base-content" />
+					<span class="text-base-content">Columns</span>
+					<mdi-border-vertical class="w-6 h-6 ml-auto text-base-content" />
 				</button>
 				<button class="btn btn-accent btn-outline w-full my-2"
 					@click="store.$state.selectedComponent = 2; store.$state.overlayOpen = !store.$state.overlayOpen">
+					<span class="text-base-content">Columns and beams</span>
+					<mdi-border-horizontal class="w-6 h-6 ml-auto text-base-content" />
+				</button>
+				<button class="btn btn-accent btn-outline w-full my-2"
+					@click="store.$state.selectedComponent = 3; store.$state.overlayOpen = !store.$state.overlayOpen">
 					<span class="text-base-content">Floor system</span>
 					<mdi-border-bottom class="w-6 h-6 ml-auto text-base-content" />
 				</button>

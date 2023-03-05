@@ -3,7 +3,7 @@ import FilterStep from '@/components/FilterStep.vue';
 
 const locations = [
 	'Denmark',
-	'other...'
+	'Other...'
 ]
 
 const selectedLocation: null | number = ref(null)

@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
+import imgColumns from '@/assets/comp1.png';
+import imgFloor from '@/assets/comp2.png';
+import imgBeams from '@/assets/comp3.png';
+import imgFacades from '@/assets/comp4.png';
+
 
 const props = defineProps<{
   isOpened: boolean,
@@ -7,52 +12,157 @@ const props = defineProps<{
 }>()
 const store = useStore();
 
+const components = reactive([
+  {
+    img: imgFacades,
+    name: 'Facede',
+    selectedMaterial: 0,
+    materials: [
+      {
+        name: "CLT",
+        prodStage: '<div class="stat-value">8.60<small>E</small>+3</div>',
+        buildStage: '<div class="stat-value text-green-600">2.68<small>E</small>+0</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">8.14<small>E</small>+02</div>',
+      }, {
+        name: "Prefab concrete",
+        prodStage: '<div class="stat-value">2.38<small>E</small>+3</div>',
+        buildStage: '<div class="stat-value text-red-600">4.69<small>E</small>+02</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">7.76<small>E</small>+0</div>',
+      }, {
+        name: "Steel / Aluminium",
+        prodStage: '<div class="stat-value text-red-600">8.60<small>E</small>+3</div>',
+        buildStage: '<div class="stat-value">2.68<small>E</small>+0</div>',
+        usingStage: '<div class="stat-value">0</div>',
+        eolStage: '<div class="stat-value">8.14<small>E</small>+02</div>',
+      },
+
+    ]
+
+  }, {
+    img: imgColumns,
+    name: 'Columns',
+    selectedMaterial: 0,
+    materials: [
+      {
+        name: "CLT"
+      }, {
+        name: "Prefab concrete"
+      }, {
+        name: "Steel / Aluminium"
+      },
+
+    ]
+
+  }, {
+    img: imgBeams,
+    name: 'Beams',
+    selectedMaterial: 0,
+    materials: [
+      {
+        name: "CLT"
+      }, {
+        name: "Prefab concrete"
+      }, {
+        name: "Steel / Aluminium"
+      },
+
+    ]
+
+  }, {
+    img: imgFloor,
+    name: 'Floor system',
+    selectedMaterial: 0,
+    materials: [
+      {
+        name: "CLT"
+      }, {
+        name: "Prefab concrete"
+      }, {
+        name: "Steel / Aluminium"
+      },
+
+    ]
+
+  }
+])
+
 </script>
 
 <template>
   <Transition name="scale">
     <div v-if="isOpened" class="fixed top-0 left-0 w-full h-full z-30">
       <div class="absolute inset-0 bg-base-content opacity-50 cursor-pointer" @click="store.$state.overlayOpen = false" />
-      <div class="relative my-16 mx-auto max-w-4xl bg-base-100">
+      <div class="relative my-8 mx-auto max-w-5xl bg-base-100">
 
-        <b>{{ selected }}</b>
-        <div class="grid grid-cols-2 auto-rows-auto p-8">
-          <div class="w-full aspect-[16/9] bg-secondary rounded-lg" />
+        <template v-for="(component, i) in components" :key="i">
 
-          <div class="px-4 row-span-2">
-            <div class="form-control w-full">
-              <label class="label">
-                <span class="label-text text-lg">Width</span>
-                <span class="label-text font-bold text-lg">100%</span>
-              </label>
-              <input type="range" min="0" max="100" value="40" class="range range-sm range-accent" />
-            </div>
-            <div class="form-control w-full">
-              <label class="label">
-                <span class="label-text text-lg">Width</span>
-                <span class="label-text font-bold text-lg">100%</span>
-              </label>
-              <input type="range" min="0" max="100" value="40" class="range range-sm range-accent" />
-            </div>
-            <div class="form-control w-full">
-              <label class="label">
-                <span class="label-text text-lg">Width</span>
-                <span class="label-text font-bold text-lg">100%</span>
-              </label>
-              <input type="range" min="0" max="100" value="40" class="range range-sm range-accent" />
+          <div v-if="selected === i" class="grid grid-cols-2 auto-rows-auto p-8">
+            <div>
+              <p class="text-left font-bold px-2 mb-2">{{ component.name }}</p>
+              <img :src="component.img" class="w-full aspect-[16/10] object-cover bg-secondary rounded-lg border-2 border-secondary" />
             </div>
 
+            <div class="px-4 row-span-2">
+              <div class="form-control w-full">
+                <label class="label">
+                  <span class="label-text text-lg">Material</span>
+                </label>
+                <div class="btn-group btn-group-vertical">
+                  <button v-for="(material, j) in component.materials" :key="j" class="btn w-full"
+                    :class="component.selectedMaterial === j ? 'btn-accent' : ''" @click="component.selectedMaterial = j">
+                    {{ component.materials[j].name }}</button>
+                </div>
+              </div>
+
+              <div class="form-control w-full mt-2">
+                <label class="label">
+                  <span class="label-text text-lg">Producer</span>
+                </label>
+                <select class="select select-bordered select-accent border-2">
+                  <option disabled selected>Pick producer...</option>
+                  <option>Producer 001</option>
+                  <option>Producer 002</option>
+                  <option>Producer 003</option>
+                  <option>Producer 004</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="col-span-2 mt-4">
+
+              <p class="text-left font-bold px-2">(GWP - kg CO<sub>2</sub>e)</p>
+              <div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg border-2 border-base-300 mt-2">
+                <div class="stat">
+                  <div class="stat-title">Product stage:</div>
+                  <div v-html="component.materials[component.selectedMaterial].prodStage"></div>
+                  <div class="stat-figure text-secondary">
+                    <mdi-factory class="w-10 h-10" />
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Building process</div>
+                  <div v-html="component.materials[component.selectedMaterial].buildStage"></div>
+                  <div class="stat-figure text-secondary">
+                    <mdi-crane class="w-10 h-10" />
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Using stage</div>
+                  <div v-html="component.materials[component.selectedMaterial].usingStage"></div>
+                  <div class="stat-desc">({{ component.selectedMaterial === 1 ? '100' : '50' }} year cycle)</div>
+                  
+                </div>
+                <div class="stat">
+                  <div class="stat-title">EOL stage</div>
+                  <div v-html="component.materials[component.selectedMaterial].eolStage"></div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="flex gap-1 my-4">
-            <div class="badge">neutral</div>
-            <div class="badge badge-primary">primary</div>
-            <div class="badge badge-secondary">secondary</div>
-            <div class="badge badge-accent">accent</div>
-            <div class="badge badge-ghost">ghost</div>
-          </div>
-          <p>123 123 123 </p>
-        </div>
+        </template>
         <button class="btn btn-outline mb-4 px-8" @click="store.$state.overlayOpen = false">OK</button>
       </div>
     </div>
